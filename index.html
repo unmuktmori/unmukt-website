@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  ============================================
+  UNMUKT'S FIRST WEBSITE — index.html
+  ============================================
+  This file is the STRUCTURE only (the skeleton).
+  All the colors/spacing live in style.css.
+  All the interactivity lives in script.js.
+
+  Notice the two lines near the bottom of <head> and
+  before </body> — that's how one file "connects" to another.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unmukt's First Website</title>
+
+  <!-- Load two Google Fonts: a bold display font for headings,
+       and a clean sans-serif font for regular text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- This line loads our CSS file. Without it, the page would
+       have zero styling — just plain black text. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- A little floating badge — purely decorative -->
+  <div class="note">my very first site! 🎉</div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav>
+    <div class="wrap">
+      <div class="logo">Unmukt's First Website</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#fact">Fun Fact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO (big intro banner) ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Welcome to my corner of the internet</span>
+      <h1>Hi, I'm Unmukt<span class="cursor"></span></h1>
+      <p>This page is the first website I ever built — completely from scratch, one tag at a time. Have a look around!</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>A bit about me</h2>
+      <p>
+        I'm just getting started with code. I used to think websites were
+        pure magic — now I'm learning they're really just text files that
+        browsers know how to read. Replace this paragraph with a couple of
+        sentences about yourself!
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ THINGS I'M LEARNING ============ -->
+  <section class="learning" id="learning">
+    <div class="wrap">
+      <h2>Things I'm learning</h2>
+      <ul class="check-list">
+        <li>How HTML builds the structure of a page</li>
+        <li>How CSS controls color, spacing, and layout</li>
+        <li>How JavaScript makes things interactive</li>
+        <li>How to publish a website so anyone can visit it</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MY GOALS (card grid) ============ -->
+  <section class="goals" id="goals">
+    <div class="wrap">
+      <h2>My Goals</h2>
+      <p class="section-sub">What I'm working towards this year</p>
+      <div class="goal-grid">
+        <div class="goal-card">
+          <div class="goal-icon">🤖</div>
+          <h3>Learn AI</h3>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">💻</div>
+          <h3>Learn Web Development</h3>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">📐</div>
+          <h3>Improve Mathematics</h3>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🎯</div>
+          <h3>Prepare for Competitive Exams</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERACTIVE FUN FACT ============ -->
+  <section id="fact">
+    <div class="wrap">
+      <div class="fact-box">
+        <h2 class="fact-heading">Click for a random coding fun fact</h2>
+        <button id="fact-btn">Give me a fact</button>
+        <p id="fact-output"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      Built with HTML, CSS &amp; JavaScript — and a lot of curiosity. 💛
+    </div>
+  </footer>
+
+  <!-- This line loads our JavaScript file, right before the page ends.
+       Doing it here (instead of in <head>) means the page finishes
+       drawing itself before the script starts running. -->
+  <script src="script.js"></script>
+</body>
+</html>
